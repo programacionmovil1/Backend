@@ -1,4 +1,4 @@
-package com.ktor
+package limbusapi.model.schema
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.serialization.Serializable

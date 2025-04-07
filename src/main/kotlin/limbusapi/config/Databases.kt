@@ -1,5 +1,9 @@
-package com.ktor
+package limbusapi.config
 
+import limbusapi.model.schema.City
+import limbusapi.model.schema.CityService
+import limbusapi.model.schema.ExposedUser
+import limbusapi.model.schema.UserService
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
@@ -15,9 +19,6 @@ import io.ktor.sse.*
 import java.sql.Connection
 import java.sql.DriverManager
 import org.jetbrains.exposed.sql.*
-import org.koin.dsl.module
-import org.koin.ktor.plugin.Koin
-import org.koin.logger.slf4jLogger
 import org.slf4j.event.*
 
 fun Application.configureDatabases() {
